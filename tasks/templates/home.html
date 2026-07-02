@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="container py-5">
+        <section class="card card-body">
+            <h1 class="display-1 text-center">Django App</h1>
+            <p class="lead text-center text-muted">Gestor de Tareas — organiza tu día, sin complicaciones</p>
+
+            <p style="text-align: justify;">
+                Aplicación web desarrollada en Django para la gestión personal de tareas, con sistema de autenticación completo y control de acceso por usuario. Cada persona puede registrarse, iniciar sesión y administrar sus propias tareas de forma privada y segura.
+            </p>
+            <p style="text-align: justify;">
+                Implementa un CRUD completo: crear tareas con título, descripción y prioridad; consultar pendientes y completadas por separado; editar, marcar como terminadas o eliminar cuando ya no se necesitan. Todo el acceso está protegido, de modo que cada usuario solo ve y gestiona sus propias tareas.
+            </p>
+            <p style="text-align: justify;">
+                Entre sus características principales destacan la separación entre tareas pendientes y completadas, el registro automático de la fecha de creación y de completado de cada tarea, y una interfaz sencilla y responsiva.
+            </p>
+
+            <div class="text-center justify-context">
+                <a class="btn btn-primary" href="/signin">
+                    Signin
+                </a>
+                <a class="btn btn-dark" href="/signup">
+                    Signup
+                </a>
+            </div>
+
+            <p class="text-center text-muted small mt-4 mb-0">
+                Hecho con Python · Django · Django ORM · SQLite · Bootstrap 5
+            </p>
+        </section>
+        
+    </main>
+    
+
+{% endblock %}
+
